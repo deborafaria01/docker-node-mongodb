@@ -16,7 +16,7 @@ const {
 
 
 app.get('/', function (req, res) {
-  res.send('Se inscreva no meu canal!!!');
+  res.send('Deu certo!!!');
 });
 
 MongoClient.connect(
@@ -26,10 +26,10 @@ MongoClient.connect(
     useUnifiedTopology: true
   })
   .then(result => {
-    console.log('MongoDB Connect!!!');
+    console.log('MongoDB Connect!!');
   })
   .catch(error => {
-    console.log('MongoDB Fail!!!');
+    console.log('MongoDB Fail!!');
   });
 
 app.listen(APP_PORT);
